@@ -1,0 +1,96 @@
+*
+{
+margin: 0%;
+}
+
+.container_meniu
+{
+      text-align: center;
+      width: 100%;
+      height: 80px;
+      background: aquamarine;
+      box-shadow: 0 10px 20px black;
+      line-height: 80px;
+}
+
+.container_meniu .meniu
+{
+      display: flex;
+      position: relative; 
+      color: brown;
+}
+
+.container_meniu .meniu li
+{
+      font-size: 30px;
+      flex: 1;
+      list-style: none;
+}
+
+.container_meniu .meniu li a
+{
+      color: cadetblue;
+      text-decoration: none;
+      transition: color 2s ease;
+}
+
+.container_meniu .meniu li:hover a
+{
+      color: blueviolet;
+}
+
+.container_meniu .meniu li:first-child a
+{
+      color: blueviolet;
+}
+.container_meniu .meniu .linie
+{
+      position: absolute;
+      height: 5px;
+      width: 20%;
+      background: blueviolet;
+      left:0px;
+      bottom: 0;
+      transition: 1s ease;
+}
+.container_meniu .meniu li:nth-child(2):hover ~ .linie
+{
+      left: 20%;
+}
+.container_meniu .meniu li:nth-child(3):hover ~ .linie
+{
+      left: 40%;
+}
+.container_meniu .meniu li:nth-child(4):hover ~ .linie
+{
+      left: 60%;
+}
+.container_meniu .meniu li:nth-child(5):hover ~ .linie
+{
+      left: 80%;
+}
+
+.jumbotron {
+      height: 700px;
+      background: 
+      linear-gradient(
+            rgb(0,0,250,0.35),
+            rgb(250,180,125,0.45)), 
+       url("https://source.unsplash.com/1600x900/?sport") ;
+      background-size: cover;
+      text-align: center;
+  }
+
+.jumbotron .omulet
+{
+      width: 59px;
+      height: 60px;
+      -webkit-animation: culoarea-omuletului 3s infinite;
+}
+
+@-webkit-keyframes culoarea-omuletului 
+{
+      0%, 100% {-webkit-filter: invert(20%) sepia(70%) saturate(3300%) hue-rotate(350deg) brightness(130%) contrast(100%);}
+      50% {-webkit-filter: invert(100%) sepia(10%) saturate(500%) hue-rotate(220deg) brightness(100%) contrast(100%);}
+}
+
